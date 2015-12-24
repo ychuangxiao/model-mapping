@@ -24,9 +24,9 @@ public  class DemoClass {
 		 //Activity中，UserViewModel对应视图模型
 		 
 		 UserViewModel userViewModel = new UserViewModel();
-		 userViewModel.setUserName(userEntity.getUserName);
+		 userViewModel.setUserName(userEntity.getUserName());
 		 
-		 
+		 //明天再写吧
     }
    
 ```
