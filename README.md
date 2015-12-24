@@ -5,7 +5,9 @@
 这是项目 [domain-mapping](https://github.com/ychuangxiao/domain-mapping) 
 欢迎访问。
 
-
+灵感来源
+-----------------------------------
+  借鉴大神[WonderCsabo](https://github.com/excilys/androidannotations)，比较靠谱的注解框架，我相信你会喜欢它的。
 
 说明：<br />
 1、主要是解放生产力，让编译器去折腾吧。<br />
