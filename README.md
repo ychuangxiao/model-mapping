@@ -9,7 +9,7 @@
 
 说明：<br />
 1、主要是解放生产力，让编译器去折腾吧。<br />
-2、利用注解，编译器在<b style='font-size:20px;color:red'>编译</b>时，让Web api pojo与View model之间实现映射.动态生成代码。下面看个例子：<br />
+2、利用注解，编译器在<h2><b>编译</b></h2>时，让Web api pojo与View model之间实现映射.动态生成代码。下面看个例子：<br />
 
 ```java  
    
