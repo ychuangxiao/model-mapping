@@ -11,6 +11,8 @@
 1、主要是解放生产力，让编译器去折腾吧。
 2、利用注解，编译器在<b>编译</b>时，让Web api pojo与View model之间实现映射.动态生成代码。下面看个例子：
 
+```java  
+   
 public  class DemoClass {
          //常规的做法,
 		 //UserEntity(对应Api pojo)
@@ -24,3 +26,6 @@ public  class DemoClass {
 		 
 		 
     }
+   
+```
+
