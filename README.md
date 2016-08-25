@@ -2,7 +2,7 @@
 
 # 我的第一个GitHub项目
 
-这是项目 [domain-mapping](https://github.com/ychuangxiao/domain-mapping) 
+这是项目 [model-mapping](https://github.com/ychuangxiao/model-mapping)
 欢迎访问。
 
 灵感来源
