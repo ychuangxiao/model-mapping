@@ -1,1 +1,1 @@
-include ':app', ':android-transformer'
+include ':app', ':android-transformer', ':android-transformer-compiler'
