@@ -1,13 +1,14 @@
 package com.banditcat.example;
 
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import com.banditcat.example.entity.UserEntity;
+import com.banditcat.example.model.UserModel;
+import com.banditcat.example.model.UserModelMapper;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -18,14 +19,31 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+
+        //UserEntity(对应Api pojo)
+        UserEntity userEntity = new UserEntity();
+
+        userEntity.setUserId(1000L);
+        userEntity.setUserName("cat");
+        userEntity.setFullName("banditcat");
+
+
+        //Activity中，UserModel对应视图模型
+        //常规的做法
+
+
+        UserModel userModel = new UserModel();
+
+        userModel.setStringUserId(userEntity.getUserId().toString());//还需要判断类型
+        userModel.setUserName(userEntity.getUserName());
+        userModel.setFullName2(userEntity.getFullName());
+
+
+        //新的做法
+
+
+        userModel = UserModelMapper.getInstance().transformer(userEntity);//主要是把这些硬编码的方式,通过注解的方式减轻体力
+
     }
 
     @Override

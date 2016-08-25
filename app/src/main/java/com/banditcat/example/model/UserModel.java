@@ -10,7 +10,7 @@ import com.banditcat.example.entity.UserEntity;
 
 
 @MappedClass(with = UserEntity.class)
-public class UserMode {
+public class UserModel {
 
 
     @Filed(toField = "userId")

@@ -24,7 +24,7 @@ public class EmployeeEntity extends UserEntity {
 
     Collection<FamilyEntity> familyEntities;
 
-    AddressEntity addresso;
+    AddressEntity addressEntity;
 
     public String getAddress() {
         return address;
@@ -43,11 +43,11 @@ public class EmployeeEntity extends UserEntity {
         this.familyEntities = familyEntities;
     }
 
-    public AddressEntity getAddresso() {
-        return addresso;
-    }
+     public AddressEntity getAddressEntity() {
+         return addressEntity;
+     }
 
-    public void setAddresso(AddressEntity addresso) {
-        this.addresso = addresso;
-    }
-}
+     public void setAddressEntity(AddressEntity addressEntity) {
+         this.addressEntity = addressEntity;
+     }
+ }

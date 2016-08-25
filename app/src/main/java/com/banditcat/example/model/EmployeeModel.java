@@ -10,16 +10,16 @@ import com.banditcat.example.entity.EmployeeEntity;
 import java.util.Collection;
 
 @MappedClass(with = EmployeeEntity.class)
-public class EmployeeMode extends UserMode {
+public class EmployeeModel extends UserModel {
 
     @Filed
     String address;
 
-    @FiledByCollection(with = FamilyMode.class,toField = "familyEntities")
-    Collection<FamilyMode> familyModes;
+    @FiledByCollection(with = FamilyModel.class,toField = "familyEntities")
+    Collection<FamilyModel> familyModels;
 
-    @FiledByClass(toField = "addresso")
-    AddressMode addressMode;
+    @FiledByClass(toField = "addressEntity")
+    AddressModel addressModel;
 
 
     public String getAddress() {
@@ -30,19 +30,19 @@ public class EmployeeMode extends UserMode {
         this.address = address;
     }
 
-    public Collection<FamilyMode> getFamilyModes() {
-        return familyModes;
+    public Collection<FamilyModel> getFamilyModels() {
+        return familyModels;
     }
 
-    public void setFamilyModes(Collection<FamilyMode> familyModes) {
-        this.familyModes = familyModes;
+    public void setFamilyModels(Collection<FamilyModel> familyModels) {
+        this.familyModels = familyModels;
     }
 
-    public AddressMode getAddressMode() {
-        return addressMode;
+    public AddressModel getAddressModel() {
+        return addressModel;
     }
 
-    public void setAddressMode(AddressMode addressMode) {
-        this.addressMode = addressMode;
+    public void setAddressModel(AddressModel addressModel) {
+        this.addressModel = addressModel;
     }
 }

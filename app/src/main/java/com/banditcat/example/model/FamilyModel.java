@@ -6,7 +6,7 @@ import com.banditcat.android.transformer.annotation.MappedClass;
 import com.banditcat.example.entity.FamilyEntity;
 
 @MappedClass(with = FamilyEntity.class)
-public class FamilyMode {
+public class FamilyModel {
 
     @Filed
     private String address;

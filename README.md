@@ -16,17 +16,30 @@
 ```java  
    
 public  class DemoClass {
-         //常规的做法,
-		 //UserEntity(对应Api pojo)
-		 UserEntity userEntity = new UserEntity();
-		 userEntity.setUserName("banditcat");
-		 
-		 //Activity中，UserViewModel对应视图模型
-		 
-		 UserViewModel userViewModel = new UserViewModel();
-		 userViewModel.setUserName(userEntity.getUserName());
-		 
-		 //明天再写吧
+
+                 //UserEntity(对应Api pojo)
+                 UserEntity userEntity = new UserEntity();
+
+                 userEntity.setUserId(1000L);
+                 userEntity.setUserName("cat");
+                 userEntity.setFullName("banditcat");
+
+
+                 //Activity中，UserModel对应视图模型
+                 //常规的做法
+
+
+                 UserModel userModel = new UserModel();
+
+                 userModel.setStringUserId(userEntity.getUserId().toString());//还需要判断类型
+                 userModel.setUserName(userEntity.getUserName());
+                 userModel.setFullName2(userEntity.getFullName());
+
+
+                 //新的做法
+
+
+                 userModel = UserModelMapper.getInstance().transformer(userEntity);//主要是把这些硬编码的方式,通过注解的方式减轻体力
     }
    
 ```
