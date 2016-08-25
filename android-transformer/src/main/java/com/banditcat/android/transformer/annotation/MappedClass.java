@@ -1,17 +1,16 @@
 
 
-package com.ilogie.android.transformer.annotation;
+package com.banditcat.android.transformer.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-
 /**
  * 文件名称：{@link Parse}
  * <br/>
- * 功能描述：Use this annotation to configure the data mapping between two fields.
+ * 功能描述：Use this annotation to configure the data mapping between two classß.
  * <br/>
  * 创建作者：banditcat
  * <br/>
@@ -23,13 +22,12 @@ import java.lang.annotation.Target;
  * <br/>
  * 修改备注：
  */
-@Target(ElementType.FIELD)
+@Target(ElementType.TYPE)
 @Retention(RetentionPolicy.CLASS)
-public @interface Filed {
+public @interface MappedClass {
 
     /**
-     * Use this property to establish a specific field name, for example, if the two fields does not have the same name.
-     * @return
+     * Use this property to establish the linked object type.
      */
-     String toField() default "";
+    Class<?> with();
 }

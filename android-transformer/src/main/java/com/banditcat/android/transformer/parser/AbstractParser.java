@@ -1,5 +1,5 @@
 
-package com.ilogie.android.transformer.parser;
+package com.banditcat.android.transformer.parser;
 
 
 /**

@@ -1,6 +1,6 @@
 
 
-package com.ilogie.android.transformer.annotation;
+package com.banditcat.android.transformer.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
