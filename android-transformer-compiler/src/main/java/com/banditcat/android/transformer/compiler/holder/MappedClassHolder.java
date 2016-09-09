@@ -1,3 +1,19 @@
+
+/**
+ * Copyright (C) 2013-2016 banditcat
+ * <p/>
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not
+ * use this file except in compliance with the License. You may obtain a copy of
+ * the License at
+ * <p/>
+ * http://www.apache.org/licenses/LICENSE-2.0
+ * <p/>
+ * Unless required by applicable law or agreed To in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+ * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+ * License for the specific language governing permissions and limitations under
+ * the License.
+ */
 package com.banditcat.android.transformer.compiler.holder;
 
 import com.banditcat.android.transformer.annotation.MappedClass;
@@ -6,7 +22,6 @@ import com.banditcat.android.transformer.compiler.process.ProcessHolder;
 import com.sun.codemodel.JBlock;
 import com.sun.codemodel.JClassAlreadyExistsException;
 import com.sun.codemodel.JConditional;
-import com.sun.codemodel.JDefinedClass;
 import com.sun.codemodel.JExpr;
 import com.sun.codemodel.JExpression;
 import com.sun.codemodel.JFieldRef;
@@ -20,8 +35,8 @@ import javax.lang.model.element.AnnotationMirror;
 import javax.lang.model.element.AnnotationValue;
 import javax.lang.model.element.TypeElement;
 
-import static com.banditcat.android.transformer.compiler.helper.ModelConstants.GENERATION_METHOD_NAME_TRANSFORMER;
 import static com.banditcat.android.transformer.compiler.helper.ModelConstants.GENERATION_CLASS_NAME_SUFFIX;
+import static com.banditcat.android.transformer.compiler.helper.ModelConstants.GENERATION_METHOD_NAME_TRANSFORMER;
 /**
  * 项目名称：Study
  * 类描述：  映射类拥有者,一般只有类才创建Holder
