@@ -48,9 +48,8 @@ public  class DemoClass {
 -----------------------------------
 骚年,继续优化吧.
 
-# License
-
-```java  
+License
+-------
    
 
   Copyright (C) 2013-2016 banditcat
@@ -66,6 +65,3 @@ public  class DemoClass {
   WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
   License for the specific language governing permissions and limitations under
   the License.
- 
-   
-```
