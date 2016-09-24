@@ -177,7 +177,7 @@ public class AndroidAnnotationsProcessor extends AbstractProcessor {
         mMessager.printMessage(Diagnostic.Kind.NOTE, "Generate Sources Start");
 
 
-        CodeModelGenerator modelGenerator = new CodeModelGenerator(processingEnv.getFiler(), "1.1");
+        CodeModelGenerator modelGenerator = new CodeModelGenerator(processingEnv.getFiler(), "1.2");
         modelGenerator.generate(processResult);
         mMessager.printMessage(Diagnostic.Kind.NOTE, "Generate Sources End");
     }

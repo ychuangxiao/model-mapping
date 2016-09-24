@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
         //新的做法
 
 
-        userModel = UserModelMapper.getInstance().transformer(userEntity);//主要是把这些硬编码的方式,通过注解的方式减轻体力
+       userModel = UserModelMapper.getInstance().transformer(userEntity);//主要是把这些硬编码的方式,通过注解的方式减轻体力
 
     }
 
