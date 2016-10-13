@@ -16,5 +16,10 @@
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+    <style name="AppTheme.TransNav" parent="AppTheme" />
 
+    <style name="CustomTitleTextAppearance">
+        <item name="android:textSize">23sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
 </resources>

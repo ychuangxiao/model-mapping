@@ -23,6 +23,12 @@
             android:label="@string/title_activity_scrolling"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
+
+        <activity android:name=".view.bottombar.ThreeTabsActivity" />
+        <activity android:name=".view.bottombar.FiveColorChangingTabsActivity" android:theme="@style/AppTheme.TransNav" />
+        <activity android:name=".view.bottombar.ThreeTabsQRActivity" android:theme="@style/AppTheme.TransNav" />
+        <activity android:name=".view.bottombar.BadgeActivity" />
+        <activity android:name=".view.bottombar.CustomColorAndFontActivity" />
     </application>
 
 </manifest>

@@ -45,6 +45,7 @@ public class ParseHandler extends BaseAnnotationHandler<EComponentWithViewSuppor
     public void process(Element element, EComponentWithViewSupportHolder holder) throws Exception {
 
         AnnotationMirror parseAnnotationMirror = codeModelHelper.getAnnotationMirror(element, Parse.class);
+
         AnnotationValue originToDestinationWithValue
                 = codeModelHelper.getAnnotationValue(parseAnnotationMirror, ModelConstants.GENERATION_ORIGIN_TO_DESTINATION_WITH);
         AnnotationValue destinationToOriginWithValue
